@@ -15,7 +15,7 @@ function returnGraph(){
 			, k=0;
 			for(var j = index+1;j<count+index+1;j++){
 				var s = arrayContent[j].split(' ')
-				grafo.vertices.push(new Vertice(parseInt(s[0]),parseInt(s[1]),k++));
+				grafo.vertices.push(new Vertice(parseFloat(s[0]),parseFloat(s[1]),k++));
 			}
 			arrGrafo.push(grafo)
 			index += count+1;
